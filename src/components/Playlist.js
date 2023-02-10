@@ -15,7 +15,7 @@ const MenuCard = () => {
         try {
             const maximumvideos = 6
             const { REACT_APP_API } = process.env
-            const api = `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,snippet&playlistId=${playlist}&maxResults=${maximumvideos}&key=${REACT_APP_API}`
+            const api = `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,snippet&playlistId=${playlist}&maxResults=${maximumvideos}&key=AIzaSyCuJ4p6AjnYQmk08DNqTHnoOGBgyDl_3I8`
             const respones = await fetch(api, setHeader)
             const jsonData = await respones.json();
             console.log(jsonData);
